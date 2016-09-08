@@ -8,6 +8,7 @@ binarizeFull= function(filename)
   columnLength = nrow(newFrame)
 
   for (i in 1:noOfColumns) {
+    print("Now On:")
     print(columnNames[i])
     isCategorical=findType(newFrame, i)
      if(isCategorical){
@@ -59,4 +60,4 @@ nonBlankunique=function(givenList) {
   }
 return (indexList)
 }
-binarizeFull("combinedFrame")
+binarizeFull("testframe")
