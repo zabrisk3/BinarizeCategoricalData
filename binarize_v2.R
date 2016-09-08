@@ -1,5 +1,3 @@
-setwd("~/Documents/RCode")
-
 binarizeFull= function(filename)
 {
   read = read.csv(paste(toString(filename),".csv", sep=""),header = TRUE)
@@ -41,7 +39,6 @@ binarizeFull= function(filename)
 }
 
 findType=function(columnList, index) {
-  #truth=0
   for (i in 1: length(columnList[[index]]))
   {
     if(sapply(columnList[[index]][i], class)=="factor") {
